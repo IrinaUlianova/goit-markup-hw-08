@@ -67,12 +67,12 @@
             >
           </li>
         </ul>
-        <button type="button" class="burger-button">
+        <button type="button" class="burger-button" data-menu-button>
           <svg class="burger-button__icon"><use href="./images/icons.svg/sprite.svg#icon-menu_40px"></use></svg>
         </button>
       </div>
-      <div class="mobile-menu">
-       <button type="button" class="mobile-menu__close-btn"
+      <div class="mobile-menu is-open" data-menu>
+       <button type="button" class="mobile-menu__close-btn" data-menu-close
       > <svg class="mobile-menu__close-icon" ><use href="./images/icons.svg/sprite.svg#icon-close_40px"></use></svg></button>
         <ul class="mobile-menu__list list"><li class="mobile-menu__item">
           <a href="" class="mobile-menu__link link"> Студия</a>
@@ -80,6 +80,34 @@
         <li class="mobile-menu__item"> <a href="" class="mobile-menu__link link">Портфолио</a></li>
         <li class="mobile-menu__item"> <a href="" class="mobile-menu__link link">Контакты</a></li>
       </ul>
+      
+      <div class="mobile-contacts-wrapper">
+        <ul class="mobile-contacts-list list">
+          <li class="mobile-contacts-list__item">
+            <a href="" class="mobile-contacts-list__tel-link link"> +38 096 11 11 111</a>
+          </li>
+           <li class="mobile-contacts-list__item">
+            <a href="" class="mobile-contacts-list__mail-link link"> info@devstudio.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-socials-wrapper">
+        <ul class="mobile-socials-list">
+          <li class="mobile-socials-list__item">
+            <a href="" class="mobile-socials-list__link">Instagram</a>
+          </li>
+          <li class="mobile-socials-list__item">
+            <a href="" class="mobile-socials-list__link">Twitter</a>
+          </li>
+          <li class="mobile-socials-list__item">
+            <a href="" class="mobile-socials-list__link">Facebook</a>
+          </li>
+          <li class="mobile-socials-list__item">
+            <a href="" class="mobile-socials-list__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+</div>
       </div>
     </header>
     <main>
@@ -633,7 +661,9 @@
           <button type="submit" class="modal-form__button">Отправить</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script> -->
+    </div> -->
+     <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script>  -->
+
   </body>
 </html>

@@ -117,6 +117,12 @@ a {
   display: none;
 }
 
+.mobile-contacts-list {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+}
+
 .filter {
   display: flex;
   align-items: center;
