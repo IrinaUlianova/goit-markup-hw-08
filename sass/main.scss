@@ -1,4 +1,5 @@
 @import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 
@@ -11,7 +12,7 @@
 @import "./components/logo";
 @import "./components/menu";
 @import "./components/header-contacts";
-@import "./components/burger-button";
+@import "./components/mobile-menu";
 @import "./components/mobile-socials";
 
 @import "./components/modal-button";
