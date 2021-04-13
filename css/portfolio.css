@@ -167,6 +167,9 @@ a {
   .mobile-menu__item:focus .mobile-menu__link {
     color: var(--accent-color);
   }
+  .mobile-menu__link--current {
+    color: var(--accent-color);
+  }
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -423,13 +426,20 @@ a {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin: 0 10px;
 }
 
-.mobile-socials-list__link::after {
+.mobile-socials-list__item:last-child .mobile-socials-list__link {
+  margin-right: 0;
+}
+
+.mobile-socials-list__item:not(:first-child)::before {
   content: "";
-  width: 22px;
-  height: 0px;
-  margin: 0 10px;
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 22px;
+  width: 1px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -513,6 +523,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .works-list__item {
+    display: flex;
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
@@ -528,6 +539,13 @@ a {
   display: inline-block;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works-list__link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .works-list__link:hover, .works-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -535,10 +553,13 @@ a {
 .works-list__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
-.works-list__item > .works-list__content {
-  border-top: 1px solid transparent;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works-list__content {
+    flex-grow: 1;
+  }
 }
 
 .works-list__title {
@@ -832,8 +853,8 @@ a {
 
 @media screen and (max-width: 1199px) {
   .modal {
+    margin: 0 auto;
     min-width: 450px;
-    min-height: 609px;
   }
 }
 
@@ -951,6 +972,14 @@ a {
   color: #757575;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-form__check-desk {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+  }
+}
+
 .modal-form__check-desk::before {
   display: block;
   margin-right: 8px;
@@ -977,6 +1006,15 @@ a {
 
 .modal-form__term-link {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__term-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    padding: 0;
+  }
 }
 
 .modal-form__button {

@@ -78,6 +78,9 @@
 }
 
 .modal-form__check-desk {
+  @media screen and (max-width: 1199px) {
+    @include font(12px, 400, 14px);
+  }
   display: flex;
   align-items: center;
 
@@ -113,6 +116,10 @@
 }
 
 .modal-form__term-link {
+  @media screen and (max-width: 1199px) {
+    @include font(12px, 400, 14px);
+    padding: 0;
+  }
   color: var(--accent-color);
 }
 .modal-form__button {

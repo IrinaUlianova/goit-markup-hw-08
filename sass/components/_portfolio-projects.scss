@@ -1,6 +1,3 @@
-// .works {
-//   padding-bottom: 94px;
-// }
 .works-list {
   padding-bottom: 60px;
   @media screen and (min-width: 768px) {
@@ -17,6 +14,7 @@
     margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
+    display: flex;
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
@@ -26,6 +24,10 @@
 }
 
 .works-list__link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
   display: inline-block;
 
   &:hover,
@@ -36,12 +38,12 @@
 }
 
 .works-list__content {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-
-  .works-list__item > & {
-    border-top: 1px solid transparent;
-  }
+  border-top: none;
 }
 
 .works-list__title {
@@ -56,25 +58,7 @@
   position: relative;
   overflow: hidden;
 }
-// .works-list__item {
-//   margin-right: 30px;
-//   margin-bottom: 30px;
 
-//   &:nth-child(3n) {
-//     margin-right: 0;
-//   }
-//   &:nth-last-child(-n + 3) {
-//     margin-bottom: 0;
-//   }
-// }
-
-// /* .works-list-item:not(:nth-child(3n)) {
-//   margin-right: 30px;
-// }  */
-
-// /* .works-list-item:not(:nth-last-child(-n+3)) {
-//   margin-bottom: 30px;
-// } */
 .works-list__description {
   font-weight: 400;
   font-size: 16px;
