@@ -1,18 +1,17 @@
 .footer {
   margin: 0;
   background-color: #2f303a;
-  @media screen and (max-width: 1199px) {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 .footer-container {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    align-items: baseline;
   }
 }
 .footer-logotype {

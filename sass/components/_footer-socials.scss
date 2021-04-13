@@ -1,26 +1,31 @@
 .footer-social-holder {
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
-    margin: 0;
+    margin-left: 70px;
     text-align: left;
   }
 }
 .container-label {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 14;
   color: var(--primary-white-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 60px;
 }
 .socials {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .socials__link {
   display: flex;
